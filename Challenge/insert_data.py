@@ -17,7 +17,7 @@ for x in myresult:
 
 ##Creación de tabla
 if y == x:
-    print("LA TABLA QUE ESTA INTENTANDO CREAR, YA EXISTE")
+    print("ALMACENANDO DATOS")
 else:
   cur.execute("CREATE TABLE cards (fec_alta VARCHAR(255),\
                                 user_name VARCHAR(255),\
@@ -59,6 +59,11 @@ def insert_card(card):
 #Commit para la actualización en la DB  
 def commit_db():
   cur.connection.commit()
+
+ #Cierre conexión de la base de datos
+#def shutdown():
+#  cur.connection.close()
+
 
 #Ver Cantidad de datos almacenados
 #cur.execute("Select count(user_name) FROM Cards.cards")

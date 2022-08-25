@@ -2,3 +2,7 @@ requests
 pandas
 hashlib
 pymysql
+python-multipart
+python-jose
+passlib[Bcrypt]
+unicorn
